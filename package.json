@@ -1,6 +1,6 @@
 {
   "name": "autonomous-db",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Oracle Autonomous Database connection for Nodejs developers  (unofficial)",
   "main": "index.js",
   "scripts": {
