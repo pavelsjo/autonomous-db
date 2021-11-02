@@ -1,16 +1,16 @@
 # Autonomous Data Base (unoficcial)
 
-This repository contains the npm package's code to work with Oracle Autonomous Data Base for NodeJs developers (unoficcial) name [autonomous-db](https://www.npmjs.com/package/autonomous-db).
+This repository contains the npm package's to work with Oracle Autonomous Data Base for NodeJs developers (unoficcial) name [autonomous-db](https://www.npmjs.com/package/autonomous-db).
 
 ## Setup
 
-First you must be installed [Node](https://nodejs.org/en/):
+First you need install [Node](https://nodejs.org/en/) and the [autonomous-db](https://www.npmjs.com/package/autonomous-db) package:
 
-```shell
+```shel
 npm install autonomous-db
 ```
 
-And the parameters required come from your `Autonomous Data Warehouse (ADW) / Autonomous Transaction Procesing (ATP)` and look for [Oracle Rest Data Services URL](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/ords-access.html), finaly, the user must be ORDS permisions too.
+The config's values come from your `Autonomous Data Warehouse (ADW) / Autonomous Transaction Procesing (ATP)`, look for [Oracle Rest Data Services (ORDS) URL](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/ords-access.html), finally, this user must to have ORDS permissions too.
 
 ## Example
 
