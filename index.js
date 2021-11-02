@@ -9,22 +9,24 @@ class AutonomousDataBase {
         this.password = password;
 
         // internal parameters
-        this.URI = `${this.ordsUrl}/${this.user}/_/sql`
+        this.URI = `${this.ordsUrl + this.user}/_/sql`
         this.headers = {
             "Content-Type": "application/json",
             "authorization": `Basic ${Buffer.from(this.user + ":" + this.password).toString('base64')}`
         };
     }
     // Oracle Rest Data Services - ORDS
-    async query ({statementText, limit=1000, offset=0}) {
+    async query (statementText, limit=1000, offset=0) {
         
         const response = await fetch(this.URI, {
             method: 'POST', 
             headers: this.headers, 
             body: JSON.stringify({statementText, limit, offset})
         });
+
+        const data = await response.json()
         
-        return response;
+        return data.items[0].resultSet;
     }
     table (tableName) {
         this.tableName = tableName;
