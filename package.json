@@ -1,0 +1,26 @@
+{
+  "name": "autonomous-db",
+  "version": "1.0.0",
+  "description": "Oracle Autonomous Database connection for Nodejs developers  (unofficial)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavelsjo/autonomous-db.git"
+  },
+  "keywords": [
+    "node",
+    "autonomous",
+    "oracle",
+    "adw",
+    "atp"
+  ],
+  "author": "Pablo Sierra <pavels.jo@gmail.com> (https://github.com/pavelsjo)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/pavelsjo/autonomous-db/issues"
+  },
+  "homepage": "https://github.com/pavelsjo/autonomous-db#readme"
+}
